@@ -1,0 +1,28 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    
+}
+.container{
+    width: 40%;
+}
+/* div{
+    border: 1px solid black;
+} */
+.btn-sub{
+    border: 1px solid grey;
+    width: 10%;
+}
+
+.btn-sub:hover{
+    color:white  ;
+    background-color: green;
+}
+.btn-del{
+    border: 1px solid grey;
+    width: 10%;
+}
+.btn-del:hover{
+    color: white;
+    background-color: red;
+}

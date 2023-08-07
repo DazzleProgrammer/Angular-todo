@@ -1,0 +1,97 @@
+<!-- 
+
+
+<body>
+  <div class="wrapper">
+    <form action="#">
+      <h2>Login</h2>
+        <div class="input-field">
+        <input type="text" placeholder="user name" [(ngModel)]="username" >
+        <label>Enter your Username</label>
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="password" [(ngModel)]="password" >
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button class="button login__submit" (click)="loginUser()">
+		<span class="button__text" > <a routerLink="dashboard"> Log In Now </a> </span>
+		<i class="button__icon fas fa-chevron-right"></i>
+	  </button>	
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body> -->
+
+<p class="text-center">third works!</p>
+
+
+
+
+<div class="container-fluid bg-light">
+    <div class="container bg-light">
+
+        <div class="row mt-4" style="height: 500px;">
+            <div class="col"></div>
+            <div class="col-md-6 bg-white shadow">
+
+                <div class="card bg-warning mt-4">
+                    <h4 class="text-white p-3 pt-2 pb-2">To Do App</h4>
+                </div>
+
+                <div class="shadow" style="background-color: black;">
+                    <div class="input-group p-4">
+                        <input type="text" class="form-control" placeholder="Enter task " #task  >
+                        <button class="btn btn-outline-success" type="button" (click)="addTask(task.value)" >+</button>
+                      </div>
+                </div>
+
+                <div class="container pt-2 " style="border: 2px solid whitesmoke; box-shadow: 10px 5px 5px whitesmoke;">
+                    <table class="table">
+                        <thead>
+                            <tr >
+                                <th>S.No</th>
+                                <th>Task</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr *ngFor="let x of todoList,let i =index">
+                              <th scope="row">{{i+1}}</th>
+                              <td>{{x.task}}</td>
+                              
+                              <td><mat-icon  (click)="deleteInfo(i)" fontIcon="delete"></mat-icon>
+                                
+                                
+                        
+                              </td>
+                            </tr>
+                           
+                          </tbody>
+                       
+                    </table>
+                </div>
+               
+               
+
+            </div>
+            <div class="col"></div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
